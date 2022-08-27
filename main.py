@@ -13,7 +13,6 @@ with Image.open("world_map.bmp", "r") as infile:
 
     for i in range(0, width, 1):
         for j in range(0, height, 1):
-            # print(i, j)
             check(pixels, width, height, i, j, new_color)
 
     infile.save('colored_world_map.bmp')
